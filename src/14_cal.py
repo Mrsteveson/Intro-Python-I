@@ -22,3 +22,18 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+# Printing Calendars based upon the given argument variables
+# Number of variables given produces different calendars, requires an input
+
+print(sys.argv)
+
+if len(sys.argv) == 1:
+  calendar.TextCalendar(0).prmonth(datetime.now().year, datetime.now().month)
+elif len(sys.argv) == 2:
+  calendar.TextCalendar(0).prmonth(datetime.now().year, int(sys.argv[1]))
+elif len(sys.argv) == 3:
+  calendar.TextCalendar(0).prmonth(int(sys.argv[2], int(sys.argv[1])))
+else:
+  print("Program expects arguments to be given to produce the calendar.")
+exit() # Stop program
