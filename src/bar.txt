@@ -1,0 +1,3 @@
+Learning python.
+It is kinda neat.
+Code challenges still kick me in the teeth.

@@ -10,7 +10,7 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 # Open the file, including the correct file path, utilize .read, "r" = read.
-with open("src/foo.text", 'r') as file:
+with open("foo.txt", 'r') as file:
     txt = file.read()
 print(txt)
 
@@ -22,7 +22,7 @@ print(txt)
 # YOUR CODE HERE
 stuff = ["Learning python.", "It is kinda neat.", "Code challenges still kick me in the teeth."]
 
-with open("src/bar.text", "w") as f:    # "w" = write
+with open("bar.txt", "w") as f:    # "w" = write
     for x in stuff:
         f.write(x)  # Write each line
         f.write("\n") # Create a new line
